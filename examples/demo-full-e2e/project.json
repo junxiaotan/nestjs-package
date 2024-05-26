@@ -1,0 +1,17 @@
+{
+  "name": "demo-full-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["demo-full"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "examples/demo-full-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["demo-full:build"]
+    }
+  }
+}

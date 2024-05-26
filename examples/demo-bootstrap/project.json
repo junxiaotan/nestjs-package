@@ -1,0 +1,24 @@
+{
+  "name": "demo-bootstrap",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "examples/demo-bootstrap/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "demo-bootstrap:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "demo-bootstrap:build:development"
+        },
+        "production": {
+          "buildTarget": "demo-bootstrap:build:production"
+        }
+      }
+    }
+  }
+}
