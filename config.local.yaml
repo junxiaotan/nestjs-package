@@ -1,0 +1,8 @@
+b: 'test-b'
+a: 'test-a-local'
+db:
+  one:
+    host: '127'
+  two:
+    host: '127.0.0.1'
+    port: 3308

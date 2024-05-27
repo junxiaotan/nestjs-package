@@ -1,0 +1,5 @@
+a: 'test'
+db:
+  one:
+    host: 'localhost'
+    port: 3306
